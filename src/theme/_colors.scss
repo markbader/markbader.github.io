@@ -1,0 +1,4 @@
+$color-background: #eee;
+$color-cards: #fff;
+$color-foreground: #000;
+$color-light-foreground: adjust-color($color: $color-foreground, $lightness: 40%);

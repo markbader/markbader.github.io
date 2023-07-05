@@ -1,0 +1,43 @@
+// normal dimensions
+
+$progress-bar_height: 12px;
+$progress-bar_margin-vertical: 10px;
+$progress-bar_margin: $progress-bar_margin-vertical 0;
+
+$header_height: 32px;
+$header_padding: 40px;
+$header_button-width: 200px;
+
+$spacing-small: 5px;
+$spacing-medium: 10px;
+$spacing-large: 20px;
+$spacing-huge: 50px;
+
+$tablet-portrait-width: 400px;
+$tablet-landscape-width: 800px;
+$desktop-width: 1000px;
+$big-desktop-width: 1400px;
+
+$icon-width: 32px;
+
+$border-radius: 10px;
+
+$min-width: 270px;
+
+@mixin square($width) {
+  height: $width;
+  width: $width;
+}
+
+@mixin circle($diameter) {
+  @include square($diameter);
+  border-radius: 50%;
+}
+
+@mixin fill-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

@@ -1,0 +1,108 @@
+@import "index";
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    /* Safari, Opera, and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+
+
+    main {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+        .landingpage {
+            scroll-snap-align: start;
+            display: flex;
+            flex-flow: row wrap;
+            min-height: 100vh;
+            justify-content: flex-start;
+            align-content: center;
+            align-items: center;
+        }
+
+        .page {
+            scroll-snap-align: start;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+            min-height: 70vh;
+
+            .card {
+                display: none;
+            }
+
+            .card:nth-child(-n+3) {
+                display: block;
+            }
+
+            @include for-tablet-landscape-up {
+                .card:nth-child(-n+4) {
+                    display: block;
+                }
+            }
+
+            @include for-desktop-up {
+                .card:nth-child(-n+5) {
+                    display: block;
+                }
+            }
+
+        }
+
+        @include for-tablet-portrait-up {
+            width: 500px;
+        }
+
+        @include for-tablet-landscape-up {
+            width: 900px;
+        }
+
+        @include for-desktop-up {
+            width: 1100px;
+        }
+
+        @include for-big-desktop-up {
+            width: 1500px;
+        }
+    }
+}
+
+html,
+body {
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #eee;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}

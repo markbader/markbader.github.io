@@ -1,0 +1,36 @@
+@import "../../theme/index";
+
+.classic {
+  width: calc(100% - 2 * #{$spacing-large});
+  position: relative;
+  padding: $spacing-large $spacing-large 0 $spacing-large;
+  margin: $spacing-large $spacing-large 0 $spacing-large;
+
+  @include for-tablet-portrait-up {
+    width: $tablet-portrait-width;
+  }
+
+  @include for-tablet-landscape-up {
+    width: $tablet-landscape-width;
+  }
+
+  @include for-desktop-up {
+    width: $desktop-width;
+  }
+
+  @include for-big-desktop-up {
+    width: $big-desktop-width;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .line {
+    border: 1px solid $color-foreground;
+    width: 20%;
+    border-radius: 100%;
+    margin-bottom: 20px;
+  }
+}

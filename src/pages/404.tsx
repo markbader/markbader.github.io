@@ -1,46 +1,37 @@
-import * as React from "react"
-import { Link, HeadFC, PageProps } from "gatsby"
+import * as React from "react";
+import { Link, HeadFC, PageProps, useStaticQuery, graphql } from "gatsby";
+import * as presets from "../theme/index.module.scss";
+import { Card, Header, View } from "../components";
+import { getImage } from "gatsby-plugin-image";
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
 
 const NotFoundPage: React.FC<PageProps> = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    file(relativePath: { eq: "./me.jpg" }) {
+     childImageSharp {
+       fluid {
+         ...GatsbyImageSharpFluid
+       }
+     }
+    }
+  }
+`);
+
+  const image = getImage(data)
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <View className={presets.screen}>
+      <main>
+        <View className={presets.landingpage}>
+          <Header title="404: Seite nicht gefunden" />
+
+          <Card expanded image={image!}>
+            <b>Entschuldigung 😔, die Seite nach der du suchst konnte nicht gefunden werden.</b><br /><br />
+            <Link to="/">Go home</Link>
+          </Card>
+        </ View>
+      </main>
+    </ View>
   )
 }
 

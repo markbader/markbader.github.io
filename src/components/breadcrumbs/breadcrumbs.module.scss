@@ -1,0 +1,12 @@
+@import "../../theme/index";
+
+.classic {
+  color: $color-foreground;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $spacing-medium;
+  left: 0px;
+  top: 0px;
+}

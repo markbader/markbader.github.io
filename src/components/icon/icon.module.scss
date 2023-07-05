@@ -1,0 +1,17 @@
+@import "../../theme/index";
+
+.classic {
+  @include square($icon-width);
+  background-color: $color-background;
+  color: $color-light-foreground;
+}
+
+.small {
+  @extend .classic;
+  @include square(calc($icon-width / 2));
+}
+
+.circle {
+  @extend .classic;
+  border-radius: 50%;
+}

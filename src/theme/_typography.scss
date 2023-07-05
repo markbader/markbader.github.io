@@ -1,0 +1,48 @@
+$font-size-tiny: 9px;
+$font-size-small: 12px;
+$font-size-small-plus: 14px;
+$font-size-medium: 16px;
+$font-size-medium-plus: 18px;
+$font-size-large: 20px;
+$font-size-large-plus: 24px;
+$font-size-huge: 32px;
+$font-size-massive: 40px;
+
+$font-size-default: $font-size-medium-plus;
+
+@mixin typography_header {
+  font-size: $font-size-large;
+  font-weight: bold;
+
+  @include for-tablet-portrait-up {
+    font-size: $font-size-huge;
+  }
+}
+
+@mixin typography_subheader {
+  font-size: $font-size-medium;
+  font-weight: bold;
+
+  @include for-tablet-landscape-up {
+    font-size: $font-size-large;
+  }
+}
+
+@mixin typography_subsubheader {
+  font-size: $font-size-small-plus;
+  font-weight: bold;
+  color: $color-light-foreground;
+
+  @include for-tablet-portrait-up {
+    font-size: $font-size-medium;
+  }
+}
+
+@mixin content {
+  font-size: $font-size-small;
+  color: $color-foreground;
+
+  @include for-tablet-portrait-up {
+    font-size: $font-size-small-plus;
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../theme/index";
+
+.classic {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  left: calc(-100vh / 2) + 1;
+  top: 50vh;
+  width: 100vh;
+  color: #c0bebe;
+  justify-content: center;
+  transform: rotate(90deg);
+
+  .link {
+    text-decoration: none;
+    color: #c0bebe;
+  }
+}

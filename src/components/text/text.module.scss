@@ -1,0 +1,35 @@
+@import "../../theme/index";
+
+.classic {
+  font-size: $font-size-default;
+}
+
+.bold {
+  @extend .classic;
+  font-weight: bold;
+}
+
+.italic {
+  @extend .classic;
+  font-style: italic;
+}
+
+.header {
+  @extend .classic;
+  @include typography_header;
+}
+
+.subheader {
+  @extend .classic;
+  @include typography_subheader;
+}
+
+.subsubheader {
+  @extend .classic;
+  @include typography_subsubheader
+}
+
+.nowrap {
+  @extend .classic;
+  white-space: nowrap;
+}

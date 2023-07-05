@@ -1,0 +1,242 @@
+@import "../../theme/index";
+
+.compressed {
+  width: 100%;
+
+  @include for-tablet-portrait-up {
+    width: initial;
+  }
+
+  .picture {
+    @include shadow;
+    background-color: $color-cards;
+    width: calc(100% - 2 * #{$spacing-large});
+    height: 80vw;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid $color-cards;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    user-select: none;
+    margin: $spacing-large;
+    box-sizing: border-box;
+
+    @include for-tablet-portrait-up {
+      width: calc($tablet-portrait-width / 2);
+      height: calc($tablet-portrait-width / 2);
+    }
+
+    @include for-tablet-landscape-up {
+      width: calc(($tablet-landscape-width - 2 * $spacing-large) / 3);
+      height: calc(($tablet-landscape-width - 2 * $spacing-large) / 3);
+    }
+
+    @include for-desktop-up {
+      width: calc(($desktop-width - 4 * $spacing-large) / 4);
+      height: calc(($desktop-width - 4 * $spacing-large) / 4);
+    }
+
+    @include for-big-desktop-up {
+      width: calc(($big-desktop-width - 4 * $spacing-large) / 4);
+      height: calc(($big-desktop-width - 4 * $spacing-large) / 4);
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      border-radius: $border-radius;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 20%;
+    }
+
+    &:active {
+      @include flat-shadow;
+    }
+
+    &:hover {
+      .text {
+        height: 100%;
+      }
+
+      .title {
+        font-size: $font-size-huge;
+      }
+
+      .description {
+        opacity: 1;
+        overflow-wrap: break-word;
+        animation-name: appear;
+        animation-duration: 1s;
+      }
+
+      @keyframes appear {
+        0% {
+          opacity: 0
+        }
+
+        40% {
+          opacity: 0
+        }
+
+        100% {
+          opacity: 1
+        }
+      }
+    }
+
+    .text {
+      position: absolute;
+      color: $color-cards;
+      background-color: rgba($color-foreground, 0.6);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: $border-radius;
+      bottom: 0;
+      left: 0;
+      height: 20%;
+      width: 100%;
+      transition: all 0.4s;
+    }
+
+    .title {
+      position: relative;
+      transition: all 0.4s;
+      text-align: center;
+    }
+
+    .description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 35%;
+      margin-left: 5%;
+      width: 90%;
+      opacity: 0;
+      text-align: center;
+    }
+  }
+}
+
+
+.expanded {
+  border-radius: $border-radius;
+  background-color: $color-cards;
+  width: calc(100% - 4 * #{$spacing-large});
+  min-height: 100px;
+  position: relative;
+  margin: $spacing-large;
+  padding: $spacing-large;
+  min-width: $min-width;
+
+  @include for-tablet-portrait-up {
+    width: $tablet-portrait-width;
+    min-height: 150px;
+  }
+
+  @include for-tablet-landscape-up {
+    width: $tablet-landscape-width;
+    min-height: 200px;
+  }
+
+  @include for-desktop-up {
+    width: $desktop-width;
+    min-height: 250px;
+  }
+
+  @include for-big-desktop-up {
+    width: $big-desktop-width;
+    min-height: 300px;
+  }
+
+  .picture {
+    $p_size: 100px;
+    $p_offset: 50px;
+    @include flat-shadow;
+    background-color: $color-cards;
+    width: $p_size;
+    height: $p_size;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    border: 3px solid $color-cards;
+    border-radius: $border-radius;
+    user-select: none;
+    float: right;
+    top: -$p_offset;
+    margin: $spacing-medium;
+    transform: rotate(1deg);
+    shape-outside: inset(0 0 $p_offset 0);
+
+    @include for-tablet-portrait-up {
+      $p_size: 150px;
+      width: $p_size;
+      height: $p_size;
+    }
+
+    @include for-tablet-landscape-up {
+      $p_size: 200px;
+      width: $p_size;
+      height: $p_size;
+    }
+
+    @include for-desktop-up {
+      $p_size: 250px;
+      width: $p_size;
+      height: $p_size;
+
+    }
+
+    @include for-big-desktop-up {
+      $p_size: 300px;
+      width: $p_size;
+      height: $p_size;
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      border-radius: $border-radius;
+    }
+  }
+
+  ol ::marker {
+    color: #93989b;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  ul ::marker {
+    color: #93989b;
+    font-size: 20px;
+  }
+
+  li {
+    margin-bottom: 20px;
+    line-height: 1.1;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+    }
+
+    li::before {
+      content: " ◈ "
+    }
+  }
+
+
+}
