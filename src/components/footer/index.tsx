@@ -20,8 +20,8 @@ const Footer: React.FC<FooterProps> = (props) => {
       {...rest}
       className={presets[preset]}
     >
-      <Text text="© Mark Bader" />
-      <Text text="|" />
+      <Text className={presets.link} text="© Mark Bader" />
+      <Text className={presets.link} text="|" />
       <Link to="/about" className={presets.link}>Impressum</Link>
     </ View>
   );

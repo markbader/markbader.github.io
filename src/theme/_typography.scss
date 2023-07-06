@@ -1,5 +1,5 @@
-$font-size-tiny: 9px;
-$font-size-small: 12px;
+$font-size-tiny: 7px;
+$font-size-small: 11px;
 $font-size-small-plus: 14px;
 $font-size-medium: 16px;
 $font-size-medium-plus: 18px;
@@ -14,7 +14,7 @@ $font-size-default: $font-size-medium-plus;
   font-size: $font-size-large;
   font-weight: bold;
 
-  @include for-tablet-portrait-up {
+  @include for-tablet-landscape-up {
     font-size: $font-size-huge;
   }
 }
@@ -24,7 +24,7 @@ $font-size-default: $font-size-medium-plus;
   font-weight: bold;
 
   @include for-tablet-landscape-up {
-    font-size: $font-size-large;
+    font-size: $font-size-medium-plus;
   }
 }
 
@@ -33,16 +33,15 @@ $font-size-default: $font-size-medium-plus;
   font-weight: bold;
   color: $color-light-foreground;
 
-  @include for-tablet-portrait-up {
+  @include for-tablet-landscape-up {
     font-size: $font-size-medium;
   }
 }
 
-@mixin content {
+@mixin typography_content {
   font-size: $font-size-small;
-  color: $color-foreground;
 
-  @include for-tablet-portrait-up {
+  @include for-tablet-landscape-up {
     font-size: $font-size-small-plus;
   }
 }

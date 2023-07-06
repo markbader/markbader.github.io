@@ -26,7 +26,12 @@
 
 .subsubheader {
   @extend .classic;
-  @include typography_subsubheader
+  @include typography_subsubheader;
+}
+
+.content {
+  @extend .classic;
+  @include typography_content;
 }
 
 .nowrap {

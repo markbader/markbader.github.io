@@ -11,19 +11,19 @@ import TextProps from "./text.props";
 const Text: React.FC<TextProps> = (props) => {
   const {
     children,
-    className,
+    className = "",
     preset = "classic",
     style,
     text,
     ...rest
   } = props;
 
-  const html_content = text ? {__html: text} : undefined
+  const html_content = text ? { __html: text } : undefined
 
   return (
     <span
       {...rest}
-      className={`${presets[preset]} ${className!}`}
+      className={`${presets[preset]} ${className}`}
       dangerouslySetInnerHTML={html_content}
     />
   );

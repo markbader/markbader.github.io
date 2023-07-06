@@ -1,6 +1,6 @@
 import * as React from "react";
 import { graphql, PageProps } from "gatsby";
-import { Card, Header, View, Text, Footer } from "../components";
+import { Card, Header, View, Text, Footer, Breadcrumbs } from "../components";
 import * as presets from "../theme/index.module.scss";
 import { getImage } from "gatsby-plugin-image";
 import image from "../images/me.jpg";
@@ -11,7 +11,16 @@ export const About: React.FC<PageProps<any>> = ({ data }) => {
     <View className={presets.screen}>
       <main>
         <View className={presets.landingpage}>
-          <Header title="Impressum" />
+          <Header
+            breadcrumb={
+              <Breadcrumbs
+                path={{
+                  title: "Impressum",
+                  path: `/about/`
+                }}
+              />}
+            title="Impressum"
+          />
           <Card image={getImage(data.file)!} expanded>
             <Text preset="subheader" text="Kontakt" /><br /><br />
             <b>Mark Bader</b><br /><br />
