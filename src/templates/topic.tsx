@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { View, Header, Card, Footer } from '../components';
+import { View, Header, Card, Footer, Breadcrumbs } from '../components';
 import * as presets from "../theme/index.module.scss";
 import { getImage } from "gatsby-plugin-image";
 
@@ -10,10 +10,13 @@ const Topic = ({ data }: any) => {
   return (
     <View className={presets.screen}>
       <main>
-        {group.map((subtopic: any) => (
+        {group.map((subtopic: any, index: number) => (
 
           <View key={subtopic.fieldValue} className={presets.page}>
-            <Header title={subtopic.fieldValue} />
+            {index == 0 ?
+              <Header breadcrumb={<Breadcrumbs path={{ title: group[0].edges[0].node.frontmatter.topic, path: `/${group[0].edges[0].node.frontmatter.topic}` }} />} title={subtopic.fieldValue} /> :
+              <Header title={subtopic.fieldValue} />
+            }
             {subtopic.edges.map(({ node }: any) => (
               <Card
                 key={node.id}

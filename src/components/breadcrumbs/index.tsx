@@ -1,38 +1,44 @@
 import React, { useCallback } from "react";
 
-import { View, Button, Icon, Text } from "..";
+import { View, Text } from "..";
 import * as presets from "./breadcrumbs.module.scss";
-import * as home from "./home.svg";
 
 import BreadcrumbsProps from "./breadcrumbs.props";
-import { Link } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
 
 /** A button that navigates you back to the last visited site of the app. */
 const Breadcrumbs: React.FC<BreadcrumbsProps> = (props) => {
   const { className, preset = "classic", path, style } = props;
 
-  const isNotHome = useCallback(() => 
+  const isNotHome = useCallback(() =>
     path && path.path !== "/"
-  , [path]);
+    , [path]);
+
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "home.svg" }) {
+        childImageSharp {
+          gatsbyImageData(width: 800)
+        }
+      }
+    }
+  `)
 
 
   return (
     <View
       className={presets[preset]}
     >
-      <Link to='/'>
-        <Button
-          icon={<Icon src={home} preset="small" />}
-          preset="flat"
-        />
-      </Link>
-      {isNotHome() && 
-      <>
-        <Text text="/" /> 
-        {path && <Link to={path.path}><Button preset="flat" text={path?.title} /></Link>}
-      </>}
+      <Link className={presets.link} to='/'>&#x1f464;</Link>
+      {isNotHome() &&
+        <>
+          <Text className={presets.link} text="/" />
+          {path && <Link className={presets.link} to={path.path}>{path?.title}</Link>}
+        </>}
     </View>
   );
 };
 
 export default Breadcrumbs;
+

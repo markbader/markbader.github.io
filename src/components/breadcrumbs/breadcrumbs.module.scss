@@ -9,4 +9,10 @@
   gap: $spacing-medium;
   left: 0px;
   top: 0px;
+
+  .link {
+    text-decoration: none;
+    color: transparent;
+    text-shadow: 0 0 0 #c0bebe;
+  }
 }

@@ -5,29 +5,17 @@ import { Card, Header, View } from "../components";
 import { getImage } from "gatsby-plugin-image";
 
 
-const NotFoundPage: React.FC<PageProps> = () => {
-  const data = useStaticQuery(graphql`
-  query {
-    file(relativePath: { eq: "./me.jpg" }) {
-     childImageSharp {
-       fluid {
-         ...GatsbyImageSharpFluid
-       }
-     }
-    }
-  }
-`);
+const NotFoundPage: React.FC<PageProps> = ({ data }: any) => {
 
-  const image = getImage(data)
   return (
     <View className={presets.screen}>
       <main>
         <View className={presets.landingpage}>
-          <Header title="404: Seite nicht gefunden" />
+          <Header title="Seite nicht gefunden" />
 
-          <Card expanded image={image!}>
-            <b>Entschuldigung 😔, die Seite nach der du suchst konnte nicht gefunden werden.</b><br /><br />
-            <Link to="/">Go home</Link>
+          <Card expanded image={getImage(data.file)!}>
+            <b>Es tut mir leid, aber die Seite konnte nicht gefunden werden. Vielleicht werden Sie hier fündig: </b><br /><br />
+            <Link to="/">Zurück zur Startseite</Link>
           </Card>
         </ View>
       </main>
@@ -36,5 +24,15 @@ const NotFoundPage: React.FC<PageProps> = () => {
 }
 
 export default NotFoundPage
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "me.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 800)
+      }
+    }
+  }
+`;
 
 export const Head: HeadFC = () => <title>Not found</title>

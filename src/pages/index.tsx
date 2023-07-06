@@ -2,8 +2,7 @@ import * as React from "react";
 import { graphql, PageProps } from "gatsby";
 import { Card, Footer, Header, More, View } from "../components";
 import * as presets from "../theme/index.module.scss";
-import { getImage } from "gatsby-plugin-image";
-import image from "../images/me.jpg";
+import { getImage, getSrc } from "gatsby-plugin-image";
 
 export const IndexPage: React.FC<PageProps<any>> = ({ data }) => {
   const { group } = data.allMarkdownRemark;
@@ -72,22 +71,22 @@ export const query = graphql`
 
 export default IndexPage
 
-export const Head = () => {
+export const Head = ({ data }: any) => {
   return (
     <>
       <title>{`Mark Bader`}</title>
       <meta name="description" content="Mark Bader • IT-Systems Engineer • HPI Student" />
       <meta charSet="utf-8" />
-      <link rel="icon" href={image} />
+      <link rel="icon" href={getSrc(data.file)} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={`Mark Bader`} />
       <meta name="twitter:description" content="Mark Bader • IT-Systems Engineer • HPI Student" />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content={getSrc(data.file)} />
       <meta property="og:site_name" content="Marks Website"></meta>
       <meta property="og:type" content="website"></meta>
       <meta property="og:url" content="https://www.markbader.de/"></meta>
-      <meta property="og:image" content={image}></meta>
+      <meta property="og:image" content={getSrc(data.file)}></meta>
       <meta property="og:title" content={`Mark Bader`}></meta>
     </>
   )
