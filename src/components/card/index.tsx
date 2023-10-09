@@ -4,8 +4,7 @@ import { View, Text } from "..";
 import * as presets from "./card.module.scss";
 import CardProps from "./card.props";
 import { Link } from "gatsby";
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
-import placeholder from "../breadcrumbs/home.svg";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const Card: React.FC<CardProps> = (props) => {
   const {
