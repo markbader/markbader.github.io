@@ -8,8 +8,8 @@ description: Gestreifter Biskuit mit Schoko-Orangen-Füllung
 
 ## Zutaten
 
-
 ### Für den Biskuit Teig
+
 - 140 g Mehl
 - 40 g Backkakao
 - 6 Eiweiß
@@ -45,6 +45,6 @@ description: Gestreifter Biskuit mit Schoko-Orangen-Füllung
 7. Die Orangenmarmelade zusammen mit dem Orangenlikör kurz aufkochen lassen und auf dem Boden der Torte gleichmäßig verteilen.
 8. Daraufhin die Gelatine im Orangensaft für 5 Minuten einweichen.
 9. Währenddessen die Milch auf dem Herd zum Kochen bringen. Nun das Eigelb zusammen mit 75 g Zucker und dem Backkakao zu einer dickflüssigen Creme schlagen. Die heiße Milch dazugeben und die Creme weiter schlagen. Jetzt wird die Creme zurück in den Topf gegeben und solange bei leichter Hitze umgerührt, bis sie beginnt einzudicken. **Achtung: die Creme darf nicht mehr kochen.**
-10. Den Topf vom Herd nehmen und den Orangensaft mit der Gelatine unterrühren. Das Eiweiß mit dem Salz schlagen bis sich weiße Spitzen bilden, 15 g Zucker hinzugeben und Eiweiß weiter schlagen bis es steif ist. Den Eischnee in die Schokoladencreme geben und vorsichtig unterheben.
+10. Den Topf vom Herd nehmen. Dann die dunkle Schoklade und den Orangensaft mit der Gelatine unterrühren. Das Eiweiß mit dem Salz schlagen bis sich weiße Spitzen bilden, 15 g Zucker hinzugeben und Eiweiß weiter schlagen bis es steif ist. Den Eischnee in die Schokoladencreme geben und vorsichtig unterheben.
 11. Die Schokoladencreme in dem Topf in eiskaltes Wasser stellen und die Creme abkühlen lassen, dabei gelegentlich umrühren. Die Sahne währenddessen halb fest schlagen. Wenn die Creme fest zu werden beginnt, die Sahne vorsichtig untermischen und die zwei Esslöffel Orangenlikör dazugeben.
 12. Die Creme in die Springform gießen und den Kuchen für mindestens vier Stunden kalt stellen. Am Ende kann der Kuchen noch nach belieben dekoriert werden, hier bieten sich grobe Schokoladenraspeln an.

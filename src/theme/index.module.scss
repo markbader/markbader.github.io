@@ -65,6 +65,25 @@
                 }
             }
 
+            .article {
+
+                h1,
+                h2,
+                h3,
+                h4 {
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                        sans-serif;
+                    color: $color-light-foreground;
+                    margin-bottom: $spacing-huge;
+                }
+
+                p {
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 20px;
+                }
+            }
+
         }
 
         @include for-tablet-portrait-up {

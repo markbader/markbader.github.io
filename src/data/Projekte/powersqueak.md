@@ -6,12 +6,14 @@ image: ../../images/power_squeak.jpg
 description: Präsentationstool für Smalltalkumgebung Squeak
 ---
 
-Es gibt viele Wege eine gute Präsentation zu erstellen: Ob mit PowerPoint von Microsoft, Impress von LibreOffice oder mit Slides von Google, mit guten Vorlagen und ausgereiften Werkzeugen zur Textformatierung gelingt der Vortrag im Handumdrehen.
+# Programmiererproblem: Wie präsentiere ich mein Präsentationstool
 
+In der heutigen Ära digitaler Innovationen spielt die Präsentation von Informationen und Ideen eine Schlüsselrolle. Ob in der Bildung, der Unternehmenswelt oder im kreativen Bereich – Präsentationen sind ein mächtiges Werkzeug zur Kommunikation komplexer Gedanken. 
 
-#### Warum also eine neue Präsentationssoftware schreiben?
+Ob mit PowerPoint von Microsoft, Impress von LibreOffice oder Slides von Google - dank erstklassiger Vorlagen und ausgefeilter Textformatierungswerkzeuge gelingt Ihr Vortrag im Handumdrehen. Doch Power Squeak eröffnet völlig neue Horizonte. Diese Präsentationssoftware ermöglicht nicht nur das gekonnte Präsentieren von Ideen, sondern auch das Festhalten der Ergebnisse spannender Softwareentwicklungen. Power Squeak bietet Ihnen die Möglichkeit, Code und die daraus resultierenden Programme anschaulich darzustellen. Ganz gleich, ob es sich um eine grafische Benutzeroberfläche oder ein Script handelt – sobald diese Elemente auf einer Folie platziert sind, wird die Präsentation interaktiv und ermöglicht Ihnen, während des Vortrags mit den Inhalten zu interagieren.
 
-Zum einen lernt man dabei natürlich etwas und das ist es schließlich, worum es im Studium geht. Zum anderen bietet eine spezialisierte Präsentationssoftware, einige Vorteile für den ihr bestimmten Anwendungsbereich. Das Anwendungsgebiet, für das Power Squeak gemacht wurde, ist die Darstellung von Programmcode und den daraus resultierenden Programmen. Zur Programmierung wird in dem Kurs Software-Technik traditionell die Programmiersprache _Smalltalk_ in Verbindung mit der Entwicklungsumgebung [Squeak](https://squeak.org) verwendet.
-
+Power Squeak ist das Ergebnis einer Teamarbeit im Fach Software-Technik. Zur Programmierung wird in diesem Kurs traditionell die Programmiersprache _Smalltalk_ in Verbindung mit der Entwicklungsumgebung [Squeak](https://squeak.org) verwendet.
 
 Smalltalk ist eine objektorientierte Programmiersprache. Squeak ist dabei vergleichbar mit einer virtuellen Maschine, in der Smalltalkcode ausgeführt wird. Dabei bietet Squeak Werkzeuge, um den Code zu bearbeiten und zu debuggen. Da in dieser Umgebung alle sichtbaren Elemente Objekte sind und diese von den Folien angezeigt werden können, lässt sich auf den Folien auch ein Code Editor unterbringen und bedienen oder ein selbst programmiertes Spiel.
+
+Das Ergebnis der Arbeit ist in [diesem GitHub Repository](https://github.com/hpi-swa-teaching/PowerSqueak) zu finden.

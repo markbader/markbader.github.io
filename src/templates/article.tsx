@@ -26,8 +26,7 @@ const Article = ({ data }: any) => {
               />}
             title={frontmatter.title} />
           <Card image={getImage(frontmatter.image)!} expanded>
-            <Text preset="subheader" text={frontmatter.description} /><br />
-            <Text text={html} />
+            <Text className={presets.article} text={html} />
           </Card>
         </View>
       </main>
