@@ -75,12 +75,14 @@
                         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
                         sans-serif;
                     color: $color-light-foreground;
-                    margin-bottom: $spacing-huge;
+                    margin: $spacing-large;
                 }
 
-                p {
+                p,
+                li {
                     font-family: 'Times New Roman', Times, serif;
                     font-size: 20px;
+                    color: $color-foreground;
                 }
             }
 

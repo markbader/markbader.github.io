@@ -6,6 +6,10 @@ image: ../../images/cookies.jpg
 description: Meine besten Triple Chocolate Cookies
 ---
 
+In der Welt der süßen Köstlichkeiten gibt es nur wenige Dinge, die so unwiderstehlich sind wie ein frisch gebackener Schokoladen-Cookie. 
+
+Mein Rezept für Triple Chocolate Cookies kombiniert den reichen, nussigen Geschmack von brauner Butter mit dem exotischen Aroma der Tonkabohne, und verfeinert das Ganze mit Schokoladenwürfeln aus weißer, Vollmilch- und Zartbitterschokolade. Das ist eine himmlische Versuchung, die alle Sinne verführt.
+
 ## Zutaten
 
 - 260 g Mehl (Typ 405)

@@ -42,7 +42,12 @@ const config: GatsbyConfig = {
               theme: "one-light",
               lineNumbers: true,
             },
-          }
+          }, {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
         ],
         // Enable JS for https://github.com/jonschlinkert/gray-matter#optionsengines (default: false)
         // It's not advised to set this to "true" and this option will likely be removed in the future

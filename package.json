@@ -24,6 +24,7 @@
     "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-plugin-sitemap": "^6.7.0",
     "gatsby-remark-highlight-code": "^3.3.0",
+    "gatsby-remark-images": "^7.12.1",
     "gatsby-source-filesystem": "^5.7.0",
     "gatsby-transformer-remark": "^6.8.0",
     "gatsby-transformer-sharp": "^5.7.0",

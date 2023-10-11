@@ -24,7 +24,7 @@ Allerdings sind nicht alle Tracking-Technologien gleich. Es gibt entscheidende A
 
 4. **Größe des Tracking-Geräts**: Das Tracking-Gerät sollte kompakt und unauffällig sein, um es leicht am Fahrrad anzubringen, ohne die Ästhetik oder die Funktionalität des Fahrrads zu beeinträchtigen.
 
-In einem Studierendenprojekt haben wir drei Strategien zur Ortung von Fahrrädern miteinander verglichen, dabei nutzten wir WiFi-Triangulation, GPS und Bluetooth Low Energy. Unser Hauptziel war es, die Technologien zu bewerten und festzustellen, welche die besten Ergebnisse in Bezug auf die vier Kriterien *Genauigkeit*, *Energieverbrauch*, *Verfügbarkeit* und *Größe* liefert.
+In einem Studierendenprojekt haben wir mehrere Strategien zur Ortung von Fahrrädern miteinander verglichen, dabei nutzten wir WiFi-Triangulation, GPS, Sigfox, GSM und Bluetooth Low Energy. Unser Hauptziel war es, die Technologien zu bewerten und festzustellen, welche die besten Ergebnisse in Bezug auf die vier Kriterien *Genauigkeit*, *Energieverbrauch*, *Verfügbarkeit* und *Größe* liefert.
 
 Die **WiFi-Triangulation** nutzte die verfügbaren WiFi-Netzwerke, um die Position des Fahrrads zu bestimmen. Sie beruhte auf der Messung der Signalstärke verschiedener Netzwerke in der Umgebung des Fahrrads. Die Positionen der zugehörigen Access Points wurde über frei verfügbare Daten der [WiGLE API](https://api.wigle.net/) bestimmt. Die Genauigkeit war nicht besonders hoch, da die zugrundeliegenden Daten der Access Points nicht dem tatsächlichen Standort, sondern dem am häufigsten Empfangenen Signal entsprach. Eine weitere Einschränkung ist die geringe Dichte an WLAN Access Points im ländlichen Raum, wodurch die Genauigkeit der Technologie erneut drastisch reduziert wird.
 
@@ -32,6 +32,9 @@ Die **WiFi-Triangulation** nutzte die verfügbaren WiFi-Netzwerke, um die Positi
 
 **Bluetooth Low Energy** erwies sich als energieeffiziente Methode, wies jedoch geringere Reichweite und Genauigkeit auf als GPS und WiFi-Triangulation. Es eignete sich gut für den Einsatz in städtischen Gebieten und Gebäuden, erwies sich jedoch in ländlichen Gegenden als weniger zuverlässig. Bluetooth LE ist nicht per se als Tracking Technologie nutzbar, sondert erfordert proprietäre Protokolle, wie Find my Mobile welches von Apple zur Verfügung gestellt wird.
 
-Unser Projekt hatte nicht zum Ziel, eine verkaufsfertige Tracking-App oder ein kommerzielles Produkt zu entwickeln, sondern vielmehr, die Vor- und Nachteile dieser Ortungsmethoden in Bezug auf die Kriterien Genauigkeit, Energieverbrauch, Verfügbarkeit und Größe des Tracking-Geräts herauszustellen. Es zeigt, dass die Wahl der besten Ortungsmethode stark von den individuellen Anforderungen und den geografischen Bedingungen abhängt. 
 
-Die Ergebnisse unserer Arbeit haben wir frei zugänglich in [einem GitHub Repository](https://github.com/rohansaw/EOS-Tracking-Resources) bereitgestellt.
+Unser Projekt hatte nicht zum Ziel, eine verkaufsfertige Tracking-App oder ein kommerzielles Produkt zu entwickeln, sondern vielmehr, die Vor- und Nachteile dieser Ortungsmethoden in Bezug auf die Kriterien Genauigkeit, Energieverbrauch, Verfügbarkeit und Größe des Tracking-Geräts herauszustellen. Es zeigt, dass die Wahl der besten Ortungsmethode stark von den individuellen Anforderungen und den geografischen Bedingungen abhängt. Am Ende des Projektes optimierten wir die bis dahin beste Konfiguration auf Energieverbrauch.
+
+Wenn diese grobe Übersicht dein Intresse geweckt hat, wirf doch einen Blick auf das GitHub Repository:
+
+<a href="https://github.com/rohansaw/EOS-Tracking-Resources"><img src="../../images/github-mark.png"/></a>

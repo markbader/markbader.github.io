@@ -6,6 +6,8 @@ image: ../../images/pizza.jpg
 description: Mein Pizza Grundrezept
 ---
 
+Die Pizza Margherita ist ein zeitloser Klassiker der italienischen Küche, der für seine Einfachheit und seinen puren Geschmack geschätzt wird. Doch wie können Sie diesen kulinarischen Genuss noch auf ein höheres Niveau heben? Die Antwort liegt in der Zubereitung mit einem Pizzastein und einer speziellen Zutat, die für den perfekten, knusprigen Rand sorgt: Hartweizengrieß. 
+
 ## Zutaten
 
 ### Für den Teig

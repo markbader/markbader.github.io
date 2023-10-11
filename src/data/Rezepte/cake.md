@@ -6,6 +6,8 @@ image: ../../images/schokoladenkuchen.jpg
 description: Gestreifter Biskuit mit Schoko-Orangen-Füllung
 ---
 
+Dieses Rezept wird Sie in eine Welt des Geschmacks und der Eleganz entführen. Umrahmt von einem leckeren gestreiften Biskuitteig, überrascht diese Torte mit einer unwiderstehlichen Füllung aus dunkler Schokolade und fruchtiger Orange. Tauchen Sie ein in die Zubereitung dieses zauberhaften Leckerbissens, das nicht nur den Gaumen, sondern auch die Augen verwöhnen wird.
+
 ## Zutaten
 
 ### Für den Biskuit Teig

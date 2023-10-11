@@ -6,7 +6,7 @@ image: ../../images/power_squeak.jpg
 description: Präsentationstool für Smalltalkumgebung Squeak
 ---
 
-# Programmiererproblem: Wie präsentiere ich mein Präsentationstool
+# Wie präsentiere ich mein Präsentationstool?
 
 In der heutigen Ära digitaler Innovationen spielt die Präsentation von Informationen und Ideen eine Schlüsselrolle. Ob in der Bildung, der Unternehmenswelt oder im kreativen Bereich – Präsentationen sind ein mächtiges Werkzeug zur Kommunikation komplexer Gedanken. 
 
@@ -16,4 +16,6 @@ Power Squeak ist das Ergebnis einer Teamarbeit im Fach Software-Technik. Zur Pro
 
 Smalltalk ist eine objektorientierte Programmiersprache. Squeak ist dabei vergleichbar mit einer virtuellen Maschine, in der Smalltalkcode ausgeführt wird. Dabei bietet Squeak Werkzeuge, um den Code zu bearbeiten und zu debuggen. Da in dieser Umgebung alle sichtbaren Elemente Objekte sind und diese von den Folien angezeigt werden können, lässt sich auf den Folien auch ein Code Editor unterbringen und bedienen oder ein selbst programmiertes Spiel.
 
-Das Ergebnis der Arbeit ist in [diesem GitHub Repository](https://github.com/hpi-swa-teaching/PowerSqueak) zu finden.
+Wirf einen Blick auf das GitHub-Repo des Projektes: 
+
+<a href="https://github.com/hpi-swa-teaching/PowerSqueak"><img src="../../images/github-mark.png"/></a>
