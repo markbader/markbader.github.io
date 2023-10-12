@@ -5,6 +5,8 @@
   position: relative;
   padding: $spacing-large $spacing-large 0 $spacing-large;
   margin: $spacing-large $spacing-large 0 $spacing-large;
+  text-shadow: #fff 0px 0px 15px;
+
 
   @include for-tablet-portrait-up {
     width: $tablet-portrait-width;

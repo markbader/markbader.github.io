@@ -8,13 +8,14 @@
   left: calc(calc(-100vh / 2) + 10px);
   top: 50vh;
   width: 100vh;
-  color: #c0bebe;
+  color: #acacac;
   justify-content: center;
   transform: rotate(90deg);
+  text-shadow: #fff 0px 0px 15px;
 
   .link {
     text-decoration: none;
-    color: #c0bebe;
+    color: #acacac;
     font-size: 10px;
 
     @include for-tablet-portrait-up {

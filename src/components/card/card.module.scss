@@ -125,8 +125,10 @@
 
 
 .expanded {
+  @include flat-shadow;
   border-radius: $border-radius;
-  background-color: $color-cards;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
   width: calc(100% - 4 * #{$spacing-large});
   min-height: 100px;
   position: relative;
