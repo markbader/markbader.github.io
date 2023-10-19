@@ -38,7 +38,7 @@ Auf dieser Seite möchte ich meine Leidenschaft für Technologie, Familie und ku
         <img src="../images/HPI_logo.png"/> 
     </td>
     <td> 
-        <b> Dozent @ HPI Digital Kolleg </b></br></br>
+        <b> Dozent @ HPI Digitalkolleg </b></br></br>
         Vorbereitung und Durchführung eines Python Kurses.
     </td>
 </tr>
