@@ -1,22 +1,21 @@
 import * as React from "react";
 import { graphql, PageProps } from "gatsby";
-import { Card, Footer, Header, More, View } from "../components";
+import { Card, Footer, Header, More, View, Text } from "../components";
 import * as presets from "../theme/index.module.scss";
 import { getImage, getSrc } from "gatsby-plugin-image";
 
 export const IndexPage: React.FC<PageProps<any>> = ({ data }) => {
   const { group } = data.allMarkdownRemark;
+  const info = data.markdownRemark;
 
   return (
     <View className={presets.screen}>
       <main>
         <View className={presets.landingpage}>
-          <Header title="Über mich" />
-          <Card image={getImage(data.file)!} expanded>
-            <b>Hey, ich bin Mark!</b><br /><br />
-            Ich bin Vater von zwei wundervollen Kindern, IT-System- und Software Entwickler und begeistere mich in meiner Freizeit fürs Kochen und Backen.<br /><br />
-            Zurzeit studiere ich den Master Studiengang IT-Systems-Engineering am Hasso-Plattner-Institut.<br /><br />
-            Ich interessiere mich vor allem für Robotik, Human-Computer-Interaction und die Entwicklung von eingebetteten Systemen. In Beruf und Studium habe ich jedoch schon vielfältige Erfahrungen rund um die Themen Anwendungsentwicklung, Netzwerktechnik, Cyber Security Management und Künstliche Intelligenz sammeln können.<br /><br />
+          <Header
+            title={info.frontmatter.title} />
+          <Card image={getImage(info.frontmatter.image)!} expanded>
+            <Text className={presets.article} text={info.html} />
           </Card>
         </View>
         {
@@ -38,7 +37,7 @@ export const IndexPage: React.FC<PageProps<any>> = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(limit: 1000) {
+    allMarkdownRemark(filter: {frontmatter: {topic: {ne: "about_me"}}}) {
       group(field: frontmatter___topic) {
         fieldValue
         totalCount
@@ -60,10 +59,16 @@ export const query = graphql`
         }
       }
     }
-    file(relativePath: { eq: "me.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(width: 800)
+    markdownRemark(frontmatter: { topic: { eq: "about_me" }}) {
+      frontmatter {
+        title
+        image{
+          childImageSharp {
+            gatsbyImageData(width: 800)
+          }
+        }
       }
+      html
     }
   }
 `;
@@ -77,16 +82,16 @@ export const Head = ({ data }: any) => {
       <title>{`Mark Bader`}</title>
       <meta name="description" content="Mark Bader • IT-Systems Engineer • HPI Student" />
       <meta charSet="utf-8" />
-      <link rel="icon" href={getSrc(data.file)} />
+      <link rel="icon" href={getSrc(data.markdownRemark.frontmatter.image)} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={`Mark Bader`} />
-      <meta name="twitter:description" content="Mark Bader • IT-Systems Engineer • HPI Student" />
-      <meta name="twitter:image" content={getSrc(data.file)} />
+      <meta name="twitter:description" content={data.markdownRemark.frontmatter.description} />
+      <meta name="twitter:image" content={getSrc(data.markdownRemark.frontmatter.image)} />
       <meta property="og:site_name" content="Marks Website"></meta>
       <meta property="og:type" content="website"></meta>
       <meta property="og:url" content="https://www.markbader.de/"></meta>
-      <meta property="og:image" content={getSrc(data.file)}></meta>
+      <meta property="og:image" content={getSrc(data.markdownRemark.frontmatter.image)}></meta>
       <meta property="og:title" content={`Mark Bader`}></meta>
     </>
   )

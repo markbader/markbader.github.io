@@ -2,24 +2,24 @@ import path from 'path';
 import { createFilePath } from 'gatsby-source-filesystem';
 
 exports.onCreateNode = ({ node, actions, getNode }: any) => {
-    const { createNodeField } = actions;
+  const { createNodeField } = actions;
 
-    if (node.internal.type === 'MarkdownRemark') {
-        const slug = createFilePath({ node, getNode, basePath: 'data' });
-        createNodeField({
-            node,
-            name: 'slug',
-            value: slug,
-        });
-    }
+  if (node.internal.type === 'MarkdownRemark') {
+    const slug = createFilePath({ node, getNode, basePath: 'data' });
+    createNodeField({
+      node,
+      name: 'slug',
+      value: slug,
+    });
+  }
 };
 
 exports.createPages = async ({ graphql, actions }: any) => {
-    const { createPage } = actions;
+  const { createPage } = actions;
 
-    const result = await graphql(`
+  const result = await graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: {frontmatter: {topic: {ne: "about_me"}}}) {
         edges {
           node {
             frontmatter {
@@ -34,26 +34,26 @@ exports.createPages = async ({ graphql, actions }: any) => {
     }
   `);
 
-    const posts = result.data.allMarkdownRemark.edges;
+  const posts = result.data.allMarkdownRemark.edges;
 
-    const topics = [...new Set(posts.map(({ node }: any) => node.frontmatter.topic))];
-    topics.forEach((topic) => {
-        createPage({
-            path: `/${topic}`,
-            component: path.resolve('./src/templates/topic.tsx'),
-            context: {
-                topic,
-            },
-        });
+  const topics = [...new Set(posts.map(({ node }: any) => node.frontmatter.topic))];
+  topics.forEach((topic) => {
+    createPage({
+      path: `/${topic}`,
+      component: path.resolve('./src/templates/topic.tsx'),
+      context: {
+        topic,
+      },
     });
+  });
 
-    posts.forEach(({ node }: any) => {
-        createPage({
-            path: node.fields.slug,
-            component: path.resolve('./src/templates/article.tsx'),
-            context: {
-                slug: node.fields.slug,
-            },
-        });
+  posts.forEach(({ node }: any) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve('./src/templates/article.tsx'),
+      context: {
+        slug: node.fields.slug,
+      },
     });
+  });
 };
