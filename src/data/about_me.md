@@ -23,10 +23,11 @@ Auf dieser Seite möchte ich meine Leidenschaft für Technologie, Familie und ku
 
 <table style="border: 10px solid #fff;">
 <tr>
-    <td style="width: 100px; padding-right: 30px;"> 
+    <td style="width: 100px; padding-right: 30px; vertical-align: top;"> 
         <img src="../images/acs_plus.png" /> </td>
     <td> 
-        <b> Data-Engineer @ acs-plus </b> </br></br>
+        <b> Data-Engineer @ acs-plus </b> </br>
+        <span style="color: #999; font-size: 12px;" >Feb. 2021 - Sep. 2021</span></br></br>
         Webentwicklung und automatisierte Tests.
     </td>
 </tr>
@@ -34,11 +35,12 @@ Auf dieser Seite möchte ich meine Leidenschaft für Technologie, Familie und ku
 
 <table style="border: 10px solid #fff;">
 <tr>
-    <td style="width: 100px; padding-right: 30px;"> 
+    <td style="width: 100px; padding-right: 30px; vertical-align: top;"> 
         <img src="../images/HPI_logo.png"/> 
     </td>
     <td> 
-        <b> Dozent @ HPI Digitalkolleg </b></br></br>
+        <b> Dozent @ HPI Digitalkolleg </b></br>
+        <span style="color: #999; font-size: 12px;">Nov. 2021 - Dez. 2021</span></br></br>
         Vorbereitung und Durchführung eines Python Kurses.
     </td>
 </tr>
@@ -46,11 +48,12 @@ Auf dieser Seite möchte ich meine Leidenschaft für Technologie, Familie und ku
 
 <table style="border: 10px solid #fff;">
 <tr>
-    <td style="width: 100px; padding-right: 30px;"> 
+    <td style="width: 100px; padding-right: 30px; vertical-align: top;"> 
         <img src="../images/scalable_minds.png"/> 
     </td>
     <td> 
-        <b> Software Entwickler @ scalable minds </b></br></br>
+        <b> Software Entwickler @ scalable minds </b></br>
+        <span style="color: #999; font-size: 12px;">seit Apr. 2023</span></br></br>
         Betreuung der Python Bibliotheken.
     </td>
 </tr>
