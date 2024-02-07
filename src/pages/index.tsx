@@ -38,7 +38,7 @@ export const IndexPage: React.FC<PageProps<any>> = ({ data }) => {
 export const query = graphql`
   query {
     allMarkdownRemark(filter: {frontmatter: {topic: {ne: "about_me"}}}) {
-      group(field: frontmatter___topic) {
+      group(field: {frontmatter: {topic: SELECT}}) {
         fieldValue
         totalCount
         edges {

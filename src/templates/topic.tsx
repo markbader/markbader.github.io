@@ -37,7 +37,7 @@ const Topic = ({ data }: any) => {
 export const query = graphql`
 query($topic: String!) {
   allMarkdownRemark(filter: {frontmatter: {topic: {eq: $topic } } }) {
-    group(field: frontmatter___subtopic) {
+    group(field: {frontmatter: {subtopic: SELECT}}) {
       fieldValue
       totalCount
       edges {
