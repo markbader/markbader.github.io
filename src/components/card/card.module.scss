@@ -149,6 +149,7 @@
   @include for-desktop-up {
     width: $desktop-width;
     min-height: 250px;
+    padding: $spacing-huge calc(3*$spacing-huge);
   }
 
   @include for-big-desktop-up {
@@ -191,7 +192,10 @@
       $p_size: 250px;
       width: $p_size;
       height: $p_size;
-
+      margin-right: -$spacing-huge*2;
+      margin-top: -$spacing-huge;
+      margin-left: $spacing-huge;
+      margin-bottom: $spacing-huge;
     }
 
     @include for-big-desktop-up {
