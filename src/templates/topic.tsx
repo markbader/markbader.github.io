@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
 import { View, Header, Card, Footer, Breadcrumbs } from '../components';
 import * as presets from "../theme/index.module.scss";
@@ -6,6 +6,10 @@ import { getImage } from "gatsby-plugin-image";
 
 const Topic = ({ data }: any) => {
   const { group } = data.allMarkdownRemark;
+
+  useEffect(() => {
+    document.querySelector(`body`)!.scrollTo(0, 0);
+  }, []);
 
   return (
     <View className={presets.screen}>

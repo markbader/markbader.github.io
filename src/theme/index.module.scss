@@ -1,5 +1,13 @@
 @import "index";
 
+@font-face {
+    font-family: 'Inter';
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url(/fonts/InterDisplay-Light.woff2) format("woff2");
+}
+
 .screen {
     display: flex;
     flex-direction: column;
@@ -51,8 +59,9 @@
 
                 p,
                 li {
-                    font-family: 'Times New Roman', Times, serif;
+                    font-family: 'Inter', sans-serif;
                     font-size: 20px;
+                    line-height: 1.8;
                     color: $color-foreground;
                 }
             }
@@ -101,8 +110,9 @@
 
                 p,
                 li {
-                    font-family: 'Times New Roman', Times, serif;
+                    font-family: 'Inter', sans-serif;
                     font-size: 20px;
+                    line-height: 1.8;
                     color: $color-foreground;
                 }
             }
@@ -137,6 +147,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
 
     overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     height: 100vh;
 
 

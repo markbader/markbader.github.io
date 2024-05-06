@@ -8,6 +8,10 @@ export const IndexPage: React.FC<PageProps<any>> = ({ data }) => {
   const { group } = data.allMarkdownRemark;
   const info = data.markdownRemark;
 
+  React.useEffect(() => {
+    document.querySelector(`body`)!.scrollTo(0, 0);
+  }, []);
+
   return (
     <View className={presets.screen}>
       <main>

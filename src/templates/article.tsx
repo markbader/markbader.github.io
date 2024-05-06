@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
 import { View, Header, Card, Footer, Text, Breadcrumbs } from '../components';
 import * as presets from "../theme/index.module.scss";
@@ -11,6 +11,10 @@ const Article = ({ data }: any) => {
   const { frontmatter, html } = markdownRemark;
 
   deckDeckGoHighlightElement();
+
+  useEffect(() => {
+    document.querySelector(`body`)!.scrollTo(0, 0);
+  }, []);
 
   return (
     <View className={presets.screen}>

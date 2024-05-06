@@ -7,6 +7,10 @@ import { getImage } from "gatsby-plugin-image";
 
 const NotFoundPage: React.FC<PageProps> = ({ data }: any) => {
 
+  React.useEffect(() => {
+    document.querySelector(`body`)!.scrollTo(0, 0);
+  }, []);
+
   return (
     <View className={presets.screen}>
       <main>

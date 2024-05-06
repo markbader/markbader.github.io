@@ -21,7 +21,7 @@ Auf dieser Seite möchte ich meine Leidenschaft für Technologie, Familie und ku
 
 ## Arbeitgeber
 
-<table style="border: 10px solid #fff;">
+<table style="border: 10px solid #fff0">
 <tr>
     <td style="width: 100px; padding-right: 30px; vertical-align: top;"> 
         <img src="../images/acs_plus.png" /> </td>
@@ -33,7 +33,7 @@ Auf dieser Seite möchte ich meine Leidenschaft für Technologie, Familie und ku
 </tr>
 </table>
 
-<table style="border: 10px solid #fff;">
+<table style="border: 10px solid #fff0;">
 <tr>
     <td style="width: 100px; padding-right: 30px; vertical-align: top;"> 
         <img src="../images/HPI_logo.png"/> 
@@ -46,7 +46,7 @@ Auf dieser Seite möchte ich meine Leidenschaft für Technologie, Familie und ku
 </tr>
 </table>
 
-<table style="border: 10px solid #fff;">
+<table style="border: 10px solid #fff0;">
 <tr>
     <td style="width: 100px; padding-right: 30px; vertical-align: top;"> 
         <img src="../images/scalable_minds.png"/> 

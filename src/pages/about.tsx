@@ -7,6 +7,10 @@ import image from "../images/me.jpg";
 
 export const About: React.FC<PageProps<any>> = ({ data }) => {
 
+  React.useEffect(() => {
+    document.querySelector(`body`)!.scrollTo(0, 0);
+  }, []);
+
   return (
     <View className={presets.screen}>
       <main>
