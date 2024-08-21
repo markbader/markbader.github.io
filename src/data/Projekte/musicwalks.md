@@ -10,7 +10,7 @@ Musik ist eine Kunstform, die uns tief in die Emotionen und Stimmungen der Augen
 
 # Ein musikalischer Rundgang durchs Museum Barberini
 
-In einem vierköpfigen Masterprojekt Team arbeiteten wir gemeinsam mit dem Museum Barberini in Potsdam, sowie dem Künstler Henrik Schwartz, an einem musikalisch begleitetem Rundgang durch die Impressionismus-Ausstellung des Museum Barberini.
+In einem vierköpfigen Masterprojekt Team arbeiteten wir gemeinsam mit dem [Museum Barberini](https://www.museum-barberini.de/de/) in Potsdam, sowie dem Künstler [Henrik Schwarz](http://www.henrikschwarz.com/), an einem musikalisch begleitetem Rundgang durch die Impressionismus-Ausstellung des Museum Barberini.
 
 Die zentrale Idee des Projektes war es, einem Besucher, der die Ausstellung erkundet, passende Musik zu den ausgestellten Bildern zu liefern. Während sich der Besucher durch die Ausstellung bewegt und von einer Gruppe Bildern zu den nächsten wechselt, wird das Musikstück auf intelligente Weise übergeleitet. Dieser Übergang zwischen den Themen erfolgt so geschmeidig, dass er nahezu unbemerkt bleibt. Die Musik passt sich an das Tempo des Betrachters an, sie folgt seinen Wegen und sorgt dafür, dass die künstlerischen Eindrücke durch die musikalische Untermalung noch eindrucksvoller werden.
 
