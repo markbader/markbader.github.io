@@ -102,6 +102,7 @@ export default About
 export const Head = () => {
   return (
     <>
+      <html lang="de" />
       <title>{`Mark Bader`}</title>
       <meta name="description" content="Mark Bader • IT-Systems Engineer • HPI Student" />
       <meta charSet="utf-8" />

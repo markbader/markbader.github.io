@@ -65,6 +65,7 @@ export const Head = ({ data }: any) => {
 
   return (
     <>
+      <html lang="de" />
       <title>{`Marks ${frontmatter.topic}: ${frontmatter.title}`}</title>
       <meta name="description" content={frontmatter.description} />
       <meta charSet="utf-8" />

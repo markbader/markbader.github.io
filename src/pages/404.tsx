@@ -39,4 +39,11 @@ export const query = graphql`
   }
 `;
 
-export const Head: HeadFC = () => <title>Not found</title>
+export const Head: HeadFC = () => {
+  return (
+    <>
+      <html lang="de" />
+      <title>Not found</title>
+    </>
+  )
+}
