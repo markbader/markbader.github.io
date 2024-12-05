@@ -29,7 +29,7 @@ export const About: React.FC<PageProps<any>> = ({ data }) => {
             <Text preset="subheader" text="Kontakt" /><br /><br />
             <b>Mark Bader</b><br /><br />
             <i>
-              Kiezstr. 24<br />
+              Friedrich-Ebert-Straße 1<br />
               14467 Potsdam<br />
               Deutschland
             </i><br /><br />
