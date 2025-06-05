@@ -1,7 +1,7 @@
 ---
 title: Music Walks
 topic: Projekte
-subtopic: Uni Projekte
+subtopic: Projekte
 image: ../../images/music_walks.jpg
 description: Ein musikalischer Rundgang durchs Barberini
 ---

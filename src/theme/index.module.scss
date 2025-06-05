@@ -1,4 +1,7 @@
-@import "index";
+@use "index";
+@use "colors";
+@use "dimensions";
+@use "media";
 
 @font-face {
     font-family: 'Inter';
@@ -53,8 +56,8 @@
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
                         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
                         sans-serif;
-                    color: $color-light-foreground;
-                    margin: $spacing-large;
+                    color: colors.$color-light-foreground;
+                    margin: dimensions.$spacing-large;
                 }
 
                 p,
@@ -62,7 +65,7 @@
                     font-family: 'Inter', sans-serif;
                     font-size: 20px;
                     line-height: 1.8;
-                    color: $color-foreground;
+                    color: colors.$color-foreground;
                 }
             }
         }
@@ -73,7 +76,7 @@
             justify-content: flex-start;
             align-content: flex-start;
             align-items: flex-start;
-            margin-bottom: $spacing-huge;
+            margin-bottom: dimensions.$spacing-huge;
 
             .card {
                 display: none;
@@ -83,13 +86,13 @@
                 display: block;
             }
 
-            @include for-tablet-landscape-up {
+            @include media.for-tablet-landscape-up {
                 .card:nth-child(-n+4) {
                     display: block;
                 }
             }
 
-            @include for-desktop-up {
+            @include media.for-desktop-up {
                 .card:nth-child(-n+5) {
                     display: block;
                 }
@@ -104,8 +107,8 @@
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
                         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
                         sans-serif;
-                    color: $color-light-foreground;
-                    margin: $spacing-large;
+                    color: colors.$color-light-foreground;
+                    margin: dimensions.$spacing-large;
                 }
 
                 p,
@@ -113,27 +116,31 @@
                     font-family: 'Inter', sans-serif;
                     font-size: 20px;
                     line-height: 1.8;
-                    color: $color-foreground;
+                    color: colors.$color-foreground;
                 }
             }
 
         }
 
-        @include for-tablet-portrait-up {
+        @include media.for-tablet-portrait-up {
             width: 500px;
         }
 
-        @include for-tablet-landscape-up {
+        @include media.for-tablet-landscape-up {
             width: 900px;
         }
 
-        @include for-desktop-up {
+        @include media.for-desktop-up {
             width: 1100px;
         }
 
-        @include for-big-desktop-up {
+        @include media.for-big-desktop-up {
             width: 1500px;
         }
+    }
+
+    .gatsby-response-image-image {
+        box-shadow: none !important;
     }
 }
 
@@ -152,8 +159,11 @@ body {
     height: 100vh;
 
 
-    background: radial-gradient(circle at 25% 25%, #f5f5f5 20%, transparent 21%, transparent 100%), radial-gradient(circle at 75% 75%, #f7f7f7 15%, transparent 16%);
-    background-size: 5em 5em;
+    // background: radial-gradient(circle at 25% 25%, #f5f5f5 20%, transparent 21%, transparent 100%), radial-gradient(circle at 75% 75%, #f7f7f7 15%, transparent 16%);
+    // background-size: 5em 5em;
+    background: rgb(229, 245, 255);
+    background: linear-gradient(120deg, rgba(144, 171, 196, 0.368) 0%, rgba(215, 209, 242, 0.278) 74%, rgba(249, 208, 184, 0.368) 100%);
+
     background-color: #fafafa;
 
 

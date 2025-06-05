@@ -1,11 +1,8 @@
 @mixin shadow {
-  box-shadow: 5px 5px 15px
-      adjust-color($color: $color-background, $lightness: -50%),
-    -5px -5px 15px adjust-color($color: $color-background, $lightness: 10%);
+  box-shadow: 5px 5px 20px rgba(64, 64, 64, 0.6);
+
 }
 
 @mixin flat-shadow {
-  box-shadow: 2px 2px 9px
-      adjust-color($color: $color-background, $lightness: -10%),
-    -2px -2px 9px adjust-color($color: $color-background, $lightness: 10%);
+  box-shadow: 2px 2px 5px rgba(64, 64, 64, 0.6);
 }

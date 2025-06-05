@@ -1,4 +1,5 @@
-@import "../../theme/index";
+@use "../../theme/colors" as *;
+@use "../../theme/dimensions" as *;
 
 .classic {
   color: $color-foreground;

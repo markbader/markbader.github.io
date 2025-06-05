@@ -1,4 +1,4 @@
-@import "../../theme/index";
+@use "../../theme/typography" as *;
 
 .classic {
   font-size: $font-size-default;

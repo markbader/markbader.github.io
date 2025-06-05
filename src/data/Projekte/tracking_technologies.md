@@ -1,7 +1,7 @@
 ---
 title: Tracking Technologien
 topic: Projekte
-subtopic: Uni Projekte
+subtopic: Projekte
 image: ../../images/tracking.png
 description: Verschiedene Optionen zur Ortung eines Fahrrads
 ---

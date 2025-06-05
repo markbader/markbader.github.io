@@ -45,6 +45,7 @@ const config: GatsbyConfig = {
             options: {
               linkImagesToOriginal: false,
               maxWidth: 800,
+              backgroundColor: "transparent",
             },
           },
         ],

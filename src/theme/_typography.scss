@@ -1,3 +1,6 @@
+@use "colors";
+@use "media";
+
 $font-size-tiny: 7px;
 $font-size-small: 11px;
 $font-size-small-plus: 14px;
@@ -14,7 +17,7 @@ $font-size-default: $font-size-medium-plus;
   font-size: $font-size-large;
   font-weight: bold;
 
-  @include for-tablet-landscape-up {
+  @include media.for-tablet-landscape-up {
     font-size: $font-size-huge;
   }
 }
@@ -23,7 +26,7 @@ $font-size-default: $font-size-medium-plus;
   font-size: $font-size-medium;
   font-weight: bold;
 
-  @include for-tablet-landscape-up {
+  @include media.for-tablet-landscape-up {
     font-size: $font-size-medium-plus;
   }
 }
@@ -31,9 +34,9 @@ $font-size-default: $font-size-medium-plus;
 @mixin typography_subsubheader {
   font-size: $font-size-small-plus;
   font-weight: bold;
-  color: $color-light-foreground;
+  color: colors.$color-light-foreground;
 
-  @include for-tablet-landscape-up {
+  @include media.for-tablet-landscape-up {
     font-size: $font-size-medium;
   }
 }
@@ -41,7 +44,7 @@ $font-size-default: $font-size-medium-plus;
 @mixin typography_content {
   font-size: $font-size-small;
 
-  @include for-tablet-landscape-up {
+  @include media.for-tablet-landscape-up {
     font-size: $font-size-small-plus;
   }
 }

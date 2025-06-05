@@ -1,7 +1,7 @@
 ---
 title: ClassifAI
 topic: Projekte
-subtopic: Uni Projekte
+subtopic: Projekte
 image: ../../images/mrt.png
 description: Ein KI Projekt zur MRT Annotation
 ---

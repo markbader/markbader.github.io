@@ -1,7 +1,7 @@
 ---
 title: Power Squeak
 topic: Projekte
-subtopic: Uni Projekte
+subtopic: Projekte
 image: ../../images/power_squeak.jpg
 description: Präsentationstool für Smalltalkumgebung Squeak
 ---

@@ -1,4 +1,6 @@
-@import "../../theme/index";
+@use "../../theme/media" as *;
+@use "../../theme/colors" as *;
+@use "../../theme/dimensions" as *;
 
 .classic {
   width: calc(100% - 2 * #{$spacing-large});

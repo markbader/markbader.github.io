@@ -24,7 +24,7 @@ Auf dieser Seite möchte ich meine Leidenschaft für Technologie, Familie und ku
 <table style="border: 10px solid #fff0">
 <tr>
     <td style="width: 100px; padding-right: 30px; vertical-align: top;"> 
-        <img src="../images/acs_plus.png" /> </td>
+        <img style="box-shadow: none;" src="../images/acs_plus.png" /> </td>
     <td> 
         <b> Data-Engineer @ acs-plus </b> </br>
         <span style="color: #999; font-size: 12px;" >Feb. 2021 - Sep. 2021</span></br></br>

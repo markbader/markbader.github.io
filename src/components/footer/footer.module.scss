@@ -1,4 +1,4 @@
-@import "../../theme/index";
+@use "../../theme/media" as *;
 
 .classic {
   position: fixed;
@@ -11,11 +11,10 @@
   color: #acacac;
   justify-content: center;
   transform: rotate(90deg);
-  text-shadow: #fff 0px 0px 15px;
 
   .link {
     text-decoration: none;
-    color: #acacac;
+    color: inherit;
     font-size: 10px;
 
     @include for-tablet-portrait-up {
