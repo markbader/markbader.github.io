@@ -53,7 +53,7 @@ Auf dieser Seite möchte ich meine Leidenschaft für Technologie, Familie und ku
     </td>
     <td> 
         <b> Software Entwickler @ scalable minds </b></br>
-        <span style="color: #999; font-size: 12px;">seit Apr. 2023</span></br></br>
+        <span style="color: #999; font-size: 12px;">Apr. 2023 - Jul. 2025</span></br></br>
         Betreuung der Python Bibliotheken.
     </td>
 </tr>
